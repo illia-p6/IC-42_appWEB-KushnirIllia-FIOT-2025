@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomeDecor — магазин товарів для домашнього затишку</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container header__inner">
+            <div class="logo">
+                <img src="assets/images/logo.png" alt="HomeDecor logo" class="logo__img">
+                <span class="logo__text">HomeDecor</span>
+            </div>
+    
+            <nav class="nav" id="navMenu">
+                <a href="#catalog" class="nav__link">Каталог</a>
+                <a href="#about" class="nav__link">Про нас</a>
+                <a href="#contacts" class="nav__link">Контакти</a>
+            </nav>
+    
+            <button class="burger" id="burgerBtn" aria-label="Меню">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+    
+
+<main>
+    <section class="hero">
+        <div class="container hero__inner">
+            <div class="hero__content">
+                <h1 class="hero__title">Зроби дім по-справжньому затишним</h1>
+                <p class="hero__subtitle">
+                    Лампи, свічки, текстиль та декор — усе, щоб створити теплу атмосферу вдома.
+                </p>
+                <button class="btn hero__btn" onclick="scrollToCatalog()">
+                    Перейти до каталогу
+                </button>
+            </div>
+            <div class="hero__image"></div>
+        </div>
+    </section>
+
+    <section class="section" id="catalog">
+        <div class="container">
+            <h2 class="section__title">Каталог товарів</h2>
+            <p class="section__subtitle">Популярні товари для домашнього затишку</p>
+
+            <div class="grid cards" id="productList">
+                <!-- JS вставляє картки товарів -->
+            </div>
+        </div>
+    </section>
+
+    <section class="section section--light" id="about">
+        <div class="container about">
+            <div class="about__text">
+                <h2 class="section__title">Про магазин HomeDecor</h2>
+                <p>
+                    HomeDecor — це онлайн-магазин, де зібрані стильні та практичні речі
+                    для оформлення інтерʼєру: від пледів та подушок до ламп, ваз і свічок.
+                </p>
+                <p>
+                    Ми дбаємо про поєднання естетики та комфорту, тому ретельно
+                    відбираємо кожен товар.
+                </p>
+            </div>
+            <div class="about__card">
+                <h3>Чому нас обирають</h3>
+                <ul>
+                    <li>Сучасний дизайн</li>
+                    <li>Швидка доставка</li>
+                    <li>Приємні ціни</li>
+                    <li>Товар під будь-який інтерʼєр</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="contacts">
+        <div class="container contacts">
+            <div>
+                <h2 class="section__title">Контакти</h2>
+                <p class="section__subtitle">
+                    Залишайтесь з нами на звʼязку
+                </p>
+                <p>Email: <a href="mailto:info@homedecor.ua">info@homedecor.ua</a></p>
+                <p>Телефон: <a href="tel:+380991112233">+38 (099) 111-22-33</a></p>
+                <p>Instagram: <a href="#">@homedecor.ua</a></p>
+            </div>
+            <form class="contact-form">
+                <h3>Напишіть нам</h3>
+                <label>
+                    Імʼя
+                    <input type="text" placeholder="Ваше імʼя">
+                </label>
+                <label>
+                    Email
+                    <input type="email" placeholder="your@email.com">
+                </label>
+                <label>
+                    Повідомлення
+                    <textarea rows="3" placeholder="Що вас цікавить?"></textarea>
+                </label>
+                <button type="submit" class="btn btn--outline">Надіслати</button>
+            </form>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="container footer__inner">
+        <p>© 2025 HomeDecor. Усі права захищено.</p>
+        <p>Зроблено як навчальний проєкт.</p>
+    </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
