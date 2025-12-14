@@ -132,3 +132,17 @@ a{text-decoration:none;color:#ff8c69;}
   .hero__title{font-size:1.9rem;}
   .hero__subtitle{font-size:.9rem;}
 }
+@media (max-width: 768px) {
+  .nav {
+    position: static;
+    opacity: 1;
+    pointer-events: auto;
+    flex-direction: column;
+    background: none;
+    box-shadow: none;
+  }
+
+  .burger {
+    display: none;
+  }
+}
