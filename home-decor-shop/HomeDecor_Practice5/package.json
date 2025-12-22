@@ -1,0 +1,21 @@
+{
+  "name": "home-decor-backend",
+  "version": "1.0.0",
+  "description": "HomeDecor Practice 5 — Express REST API + simple frontend integration",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "express",
+    "rest",
+    "api",
+    "homedecor"
+  ],
+  "author": "Illia Kushnir",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2"
+  }
+}

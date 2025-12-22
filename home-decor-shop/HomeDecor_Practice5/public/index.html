@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HomeDecor API Demo</title>
+  <style>
+    body{font-family:system-ui,-apple-system,"Segoe UI",sans-serif;background:#f5f5f7;margin:0;color:#111;}
+    header{padding:20px 24px;background:#fff;border-bottom:1px solid #e5e7eb;position:sticky;top:0}
+    h1{margin:0;font-size:20px}
+    main{padding:24px;max-width:900px;margin:0 auto}
+    .card{background:#fff;border:1px solid #e5e7eb;border-radius:14px;padding:16px;margin:12px 0;box-shadow:0 10px 25px rgba(15,23,42,.06)}
+    .muted{color:#6b7280}
+    button{border:0;border-radius:999px;padding:10px 14px;cursor:pointer}
+    .btn{background:linear-gradient(135deg,#fb7185,#fb923c);color:#fff;font-weight:600}
+    input{padding:10px 12px;border-radius:12px;border:1px solid #d1d5db;width:220px}
+    .row{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>HomeDecor </h1>
+   
+
+  <main>
+    <section class="card">
+      <h2 style="margin-top:0">GET /api/products</h2>
+      <div class="row">
+        <button class="btn" id="loadBtn">Завантажити товари</button>
+        <span class="muted" id="status">—</span>
+      </div>
+      <div id="list"></div>
+    </section>
+
+    <section class="card">
+      <h2 style="margin-top:0">POST /api/products</h2>
+      <div class="row">
+        <input id="name" placeholder="Назва (напр. Ваза)" />
+        <input id="price" placeholder="Ціна (напр. 530)" type="number" />
+        <button class="btn" id="addBtn">Додати</button>
+      </div>
+      <div class="muted">Після додавання — натисни “Завантажити товари”.</div>
+    </section>
+  </main>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
